@@ -2,7 +2,7 @@
 
 **🔗 Important Links:**
 - 🐙 **GitHub Repository:** [DakshFaldu40/Veili](https://github.com/DakshFaldu40/Veili)
-- 🌐 **Live Demo:** [https://veili-agent.vercel.app/](https://veili-agent.vercel.app/)
+- 🌐 **Live Demo:** [https://veli-agent.vercel.app/](https://veli-agent.vercel.app/)
 
 ## Introduction
 This project addresses the intersection of AI agents, edge computing, and data privacy. **On-device vision agents** promise to automate web tasks (like an AI browser assistant) without leaking sensitive data. This approach can make digital assistants more powerful and more trustworthy by keeping private information strictly local. Conversely, current AI assistants (e.g., Copilot, ChatGPT, Opera’s Aria) often run entirely in the cloud, which inherently raises privacy risks.
