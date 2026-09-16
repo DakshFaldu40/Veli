@@ -19,7 +19,7 @@ import {
   Video,
 } from "lucide-react";
 import { useState } from "react";
-import veilLogo from "@/assets/veil-logo.jpg";
+import veliLogo from "@/assets/veli-logo.jpg";
 
 export const Route = createFileRoute("/dashboard")({
   component: Dashboard,
@@ -35,9 +35,9 @@ function Dashboard() {
       <aside className={`flex w-64 flex-col border-r transition-colors duration-300 ${isDarkTheme ? 'border-slate-800 bg-slate-900' : 'border-slate-200 bg-white'}`}>
         <div className={`flex h-16 items-center gap-2 border-b px-6 transition-colors duration-300 ${isDarkTheme ? 'border-slate-800' : 'border-slate-200'}`}>
           <div className={`flex h-8 w-8 items-center justify-center rounded-lg overflow-hidden border shadow-sm transition-colors duration-300 ${isDarkTheme ? 'border-slate-700 bg-slate-800' : 'border-slate-200 bg-white'}`}>
-            <img src={veilLogo} alt="Veil Logo" className="h-full w-full object-cover" />
+            <img src={veliLogo} alt="veli Logo" className="h-full w-full object-cover" />
           </div>
-          <span className={`font-display text-lg font-bold tracking-tight transition-colors duration-300 ${isDarkTheme ? 'text-slate-100' : 'text-slate-900'}`}>Veil</span>
+          <span className={`font-display text-lg font-bold tracking-tight transition-colors duration-300 ${isDarkTheme ? 'text-slate-100' : 'text-slate-900'}`}>veli</span>
           <span className={`rounded-full border px-2 py-0.5 text-[10px] font-semibold transition-colors duration-300 ${isDarkTheme ? 'border-teal-500/30 bg-teal-500/10 text-teal-400' : 'border-teal-200 bg-teal-50 text-teal-700'}`}>
             PRO
           </span>
