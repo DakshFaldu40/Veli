@@ -31,20 +31,20 @@ import avatar1 from "@/assets/avatar-1.jpg";
 import avatar2 from "@/assets/avatar-2.jpg";
 import avatar3 from "@/assets/avatar-3.jpg";
 import avatar4 from "@/assets/avatar-4.jpg";
-import veilLogo from "@/assets/veil-logo.jpg";
+import veliLogo from "@/assets/veli-logo.jpg";
 import avatar5 from "@/assets/avatar-5.jpg";
 import avatar6 from "@/assets/avatar-6.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Veil — Privacy Agent for Browsing and Meetings" },
+      { title: "Veli — Privacy Agent for Browsing and Meetings" },
       {
         name: "description",
         content:
-          "Veil reads your page or meeting locally, redacts personal data before any network request, sends only sanitized context to the model, and executes the action back in your browser.",
+          "Veli reads your page or meeting locally, redacts personal data before any network request, sends only sanitized context to the model, and executes the action back in your browser.",
       },
-      { property: "og:title", content: "Veil — Privacy Agent for Browsing and Meetings" },
+      { property: "og:title", content: "Veli — Privacy Agent for Browsing and Meetings" },
       {
         property: "og:description",
         content: "Local analysis, local redaction, privacy firewall, server reasoning, local action execution.",
@@ -123,7 +123,7 @@ function Page() {
     {
       from: "agent",
       kind: "ok",
-      text: "I\u2019m Veil. I read whatever tab you\u2019re on \u2014 a page or a live meeting \u2014 strip personal data on-device, and only then think out loud with a model. Try \u201CSubmit this form.\u201D or \u201CMute me.\u201D",
+      text: "I\u2019m Veli. I read whatever tab you\u2019re on \u2014 a page or a live meeting \u2014 strip personal data on-device, and only then think out loud with a model. Try \u201CSubmit this form.\u201D or \u201CMute me.\u201D",
     },
   ]);
   const [task, setTask] = useState("Submit this form.");
@@ -463,7 +463,7 @@ function Page() {
               {/* Background accent blobs */}
               <div className="pointer-events-none absolute inset-0 overflow-hidden">
                 <div className="absolute -left-20 top-1/4 h-60 w-60 rounded-full bg-primary/5 blur-[80px]" />
-                <div className="absolute -right-20 bottom-1/4 h-48 w-48 rounded-full bg-veil-accent/5 blur-[70px]" />
+                <div className="absolute -right-20 bottom-1/4 h-48 w-48 rounded-full bg-veli-accent/5 blur-[70px]" />
               </div>
 
               <div className="relative z-10 mx-auto max-w-2xl">
@@ -672,17 +672,17 @@ function Page() {
           </div>
         )}
 
-        {/* RIGHT: Veil Sidebar */}
+        {/* RIGHT: Veli Sidebar */}
         <aside className={`flex min-h-0 flex-col border-l shadow-sm transition-colors duration-300 ${isDarkTheme ? 'border-slate-800 bg-slate-900 text-slate-100' : 'border-slate-200 bg-white text-slate-900'}`}>
           {/* Header */}
           <div className={`flex items-center justify-between border-b px-4 py-3.5 transition-colors duration-300 ${isDarkTheme ? 'border-slate-800 bg-slate-950' : 'border-slate-200 bg-slate-50'}`}>
             <div className="relative z-10 flex items-center gap-2.5">
               <span className={`relative flex h-9 w-9 items-center justify-center rounded-lg overflow-hidden border shadow-sm transition-colors duration-300 ${isDarkTheme ? 'border-slate-700 bg-slate-800' : 'border-slate-200 bg-white'}`}>
-                <img src={veilLogo} alt="Veil Logo" className="h-full w-full object-cover" />
+                <img src={veliLogo} alt="Veli Logo" className="h-full w-full object-cover" />
                 <span className="absolute inset-0 animate-pulse-glow rounded-lg pointer-events-none" />
               </span>
               <div>
-                <p className={`font-display text-sm font-semibold leading-none transition-colors duration-300 ${isDarkTheme ? 'text-slate-100' : 'text-slate-900'}`}>Veil</p>
+                <p className={`font-display text-sm font-semibold leading-none transition-colors duration-300 ${isDarkTheme ? 'text-slate-100' : 'text-slate-900'}`}>Veli</p>
                 <p className={`mt-1 flex items-center gap-1.5 text-[11px] font-medium transition-colors duration-300 ${isDarkTheme ? 'text-slate-400' : 'text-slate-500'}`}>
                   <span className={`inline-block h-1.5 w-1.5 rounded-full ${busy ? "animate-ping bg-amber-500" : "bg-emerald-500"}`} />
                   {busy ? "Processing\u2026" : surface === "site" ? "Watching this page" : "In this meeting"}
@@ -749,7 +749,7 @@ function Page() {
           </div>
 
           {/* Chat messages */}
-          <div ref={chatRef} className={`veil-scroll min-h-0 flex-1 space-y-3 overflow-y-auto px-4 py-4 transition-colors duration-300 ${isDarkTheme ? 'bg-slate-950' : 'bg-slate-50'}`}>
+          <div ref={chatRef} className={`veli-scroll min-h-0 flex-1 space-y-3 overflow-y-auto px-4 py-4 transition-colors duration-300 ${isDarkTheme ? 'bg-slate-950' : 'bg-slate-50'}`}>
             {messages.map((m, i) => (
               <div key={i} className={`chat-bubble-enter flex ${m.from === "user" ? "justify-end" : "justify-start"}`}>
                 <div
@@ -790,7 +790,7 @@ function Page() {
           >
             <input
               className={`mt-0 flex-1 rounded-xl border px-3 py-2.5 text-[13px] transition-all duration-200 focus:outline-none focus:ring-2 ${isDarkTheme ? 'border-slate-700 bg-slate-800 text-slate-100 placeholder:text-slate-500 focus:border-teal-500 focus:bg-slate-900 focus:ring-teal-500/20' : 'border-slate-200 bg-slate-50 text-slate-900 placeholder:text-slate-400 focus:border-teal-500 focus:bg-white focus:ring-teal-500/20'}`}
-              placeholder={surface === "site" ? "Ask Veil to act on this page\u2026" : "Ask Veil to act in this meeting\u2026"}
+              placeholder={surface === "site" ? "Ask Veli to act on this page\u2026" : "Ask Veli to act in this meeting\u2026"}
               value={task}
               onChange={(e) => setTask(e.target.value)}
             />
@@ -830,7 +830,7 @@ function MeetBtn({
         active
           ? danger
             ? "bg-red-500 text-white shadow-lg shadow-red-500/20 hover:bg-red-600"
-            : "bg-veil-accent text-white shadow-lg shadow-veil-accent/20"
+            : "bg-veli-accent text-white shadow-lg shadow-veli-accent/20"
           : "bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900"
       }`}
     >
